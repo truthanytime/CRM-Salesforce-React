@@ -1,0 +1,25 @@
+.deals-table .MuiDataGrid-cell:last-of-type {
+  color: #9da1b5;
+}
+
+.deals-table .MuiDataGrid-cell {
+  border-color: #f3f8f0 !important;
+}
+
+.deals-table .MuiDataGrid-columnHeader.MuiDataGrid-columnHeader--sortable {
+  position: relative;
+}
+
+.deals-table .MuiDataGrid-columnHeader.MuiDataGrid-columnHeader--sortable::after {
+  content: '';
+  position: absolute;
+  height: 38px;
+  top: -6px;
+  right: 10px;
+  width: 1px;
+  background-color: #e1e5ed;
+}
+
+.deals-table .MuiDataGrid-columnHeader.MuiDataGrid-columnHeader--sortable:last-child:after {
+  left: 120px;
+}

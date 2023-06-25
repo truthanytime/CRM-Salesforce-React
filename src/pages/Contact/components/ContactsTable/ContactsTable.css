@@ -1,0 +1,25 @@
+.contacts-table .MuiDataGrid-cell:last-of-type {
+  color: #9da1b5;
+}
+
+.contacts-table .MuiDataGrid-cell {
+  border-color: #f3f8f0 !important;
+}
+
+.contacts-table .MuiDataGrid-columnHeader.MuiDataGrid-columnHeader--sortable {
+  position: relative;
+}
+
+.contacts-table .MuiDataGrid-columnHeader.MuiDataGrid-columnHeader--sortable::after {
+  content: '';
+  position: absolute;
+  height: 38px;
+  top: -6px;
+  right: 10px;
+  width: 1px;
+  background-color: #e1e5ed;
+}
+
+.contacts-table .MuiDataGrid-columnHeader.MuiDataGrid-columnHeader--sortable:last-child:after {
+  left: 120px;
+}

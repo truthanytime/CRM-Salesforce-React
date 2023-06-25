@@ -1,0 +1,63 @@
+@media (max-width: 900px) {
+  .AuthInput fieldset,
+  .AuthInput:hover fieldset {
+    border-color: #ffffff !important;
+  }
+
+  .AuthInput input {
+    color: #ffffff !important;
+  }
+
+  .AuthInput .MuiIconButton-root svg path {
+    stroke: #ffffff !important;
+  }
+
+  .AuthInput .MuiIconButton-root svg circle {
+    fill: #ffffff !important;
+  }
+
+  .MuiCheckbox-root svg rect {
+    stroke: #ffffff !important;
+  }
+
+  .MuiDivider-root::before,
+  .MuiDivider-root::after {
+    border-color: #ffffff !important;
+  }
+
+  .AuthLayoutContainer h2,
+  .AuthLayoutContainer p,
+  .AuthLayoutContainer span,
+  .AuthLayoutContainer label {
+    color: #ffffff !important;
+  }
+
+  .AuthInput a {
+    font-weight: 600;
+  }
+
+  input::placeholder {
+    color: #ffffff !important;
+  }
+
+  button.MuiLoadingButton-root:disabled {
+    color: #8cb9ff;
+  }
+
+  button.MuiLoadingButton-root:enabled {
+    color: #1554ff !important;
+    background-color: #ffffff !important;
+  }
+
+  button.MuiLoadingButton-root svg path {
+    fill: #1554ff !important;
+  }
+
+  button.MuiLoadingButton-root:hover {
+    background-color: #f4f9ff !important;
+  }
+
+  button.MuiLoadingButton-root:active {
+    background-color: #dbe9ff !important;
+  }
+}
