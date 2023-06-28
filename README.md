@@ -1,46 +1,203 @@
-# Getting Started with Create React App
+# Responsive Web site
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Software introduction and download
 
-## Available Scripts
+### Style similar to this  https://www.chuansuovpn.com/index.php
 
-In the project directory, you can run:
+### the navigation bar only needs "Home" and "Help Center", with registration and login buttons.
 
-### `yarn start`
+### Place two buttons for download: "Client" and "Self-hosted Server"
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+#### Clicking on the buttons will take you to the download page
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+##### similar to chuansuovpn, with download buttons for various platforms
 
-### `yarn test`
+##### Selling Plans
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+###### Discounts can be set.
 
-### `yarn build`
+###### Monthly, quarterly, yearly.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+###### 7-day money-back guarantee
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Brief introduction of features.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Help Center
 
-### `yarn eject`
+### FAQ list
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Create a ticket
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### No need for live chat
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Member
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Register using an email address or log in with Google or Apple accounts.
 
-## Learn More
+#### Record the IP address used during registration.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Lock the account for 15 minutes after 5 consecutive password incorrect attempts.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Change Password
+
+### Forgot Password
+
+### Each account can be used on up to 5 devices, and the device information needs to be bound.
+
+#### Devices that have been used for more than 24 hours can be unbound.
+
+#### The client will send device information.
+
+## Member Page
+
+### There are two options: client and self-hosted server.
+
+#### client page
+
+##### member info
+
+##### display bind devices
+
+###### Unbinding is possible if the requirements are met.
+
+#### self-hosted server page
+
+##### member info
+
+##### servers list
+
+###### For each buy a plan, get a server,Each server contains a configure list
+
+####### Assign the name server1... serverN
+
+####### Generate an srvid for each server, globally unique
+
+###### example
+
+####### "server1" "next due date" "status"
+
+####### "server2" "next due date" "status"
+
+###### The active list and suspended list can be toggled for display.
+
+###### click list go to configure page
+
+####### server name
+
+####### srvid
+
+######## Users can copy or regenerate
+
+######### regenerate
+
+########## Prompts the user that the relevant configuration on the server needs to be modified
+
+########## Associate this configuration with the new srvid
+
+########### srver name
+
+########### configuration list
+
+####### A configuration form with 7 fields
+
+######## "mykey”,"mainkey"，“name”，“value1”,"value2"，"value3"，"userid"
+
+######### string , string , string, int, int, int
+
+########## The userid type is determined based on the user table
+
+######### The name under which they appear will be determined later
+
+######### mykey
+
+########## consists of 32 characters, similar to UUDI, globally unique, and automatically generated when the user adds a list
+
+######### mainkey, value1,value2,value3
+
+########## user input
+
+########### value1 2 3，default: 0
+
+######### name 
+
+########## Select from the drop-down list , to be added by the administrator in the background
+
+######### userid
+
+########## The ID associated with the member's account
+
+########### Always empty "", filled in by a third party
+
+############ Displays "used" or "unused", "used" when the field has a value
+
+######### When adding, it is automatically populated with the value of the previous record, (if one exists), except mykey userid
+
+######### The list can have 0-10 entries
+
+######### Users can delete list items and add new items
+
+####### The configuration table only needs to be saved, and the client will obtain it through a third-party backend server.
+
+##### can purchase a new plan or renew it
+
+## purchase
+
+### Third-party international payment platforms
+
+## refund
+
+### Return the same way
+
+### Refunds within 7 days of the first purchase
+
+### Repurchases are not refundable
+
+#### Determining repeat purchases based on account or payment information.
+
+### Fill in the reason for the refund(option)
+
+## Multi-language support 
+
+### currently Chinese and English, new language packs may need to be added in the future
+
+## Admin back-end management
+
+### Freeze/unfreeze members
+
+### Modify the user expiration time
+
+### Set the plan price and the discount
+
+### Tracking the number of users generated by advertising links deployed on various platforms.
+
+### Tracking sales quantity.
+
+### Is there an offline IP database available to separately track the number of users in different regions?
+
+### fill in the latest version number for the client and self-hosted server.
+
+#### There are multiple platforms, so there may be different version numbers
+
+##### The client is planned to run on Windows, macOS, Ubuntu, Android, and iOS
+
+##### the server is planned to run on Windows, Debian, and CentOS
+
+### Tracking the number of client and server online per day.
+
+#### They will call the designated interface once a day to notify the online.
+
+### General administrative operations
+
+## Customer service operation page.
+
+## Client query API
+
+### version
+
+### Freeze/unfreeze 
+
+### userid
+
+### srvid
+
+### And the functionalities required for the above mentioned.
